@@ -46,12 +46,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TestClass.cs" />
+    <Compile Include="PageObjects\AbstractPage.cs" />
+    <Compile Include="PageObjects\ContactResultPage.cs" />
+    <Compile Include="PageObjects\ContactUsPage.cs" />
+    <Compile Include="PageObjects\HomePage.cs" />
+    <Compile Include="Tests\HomePageTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
